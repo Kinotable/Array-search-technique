@@ -28,9 +28,7 @@ public class ArraySearch {
 
         }
 
-        int len = number.length;
-        int a = Search(number,0,len,17);
-        System.out.println("the number is at " + a);
+       
         
         int[] numberr = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20};
         int findr;
@@ -43,26 +41,9 @@ public class ArraySearch {
 
         }
 
+        // find if number 8 exhists in the number araray and only loop on the half of thre array at once
     }
 
-    static int Search(int [] array, int low, int high , int findBin ){
-        int mid;
-                mid =(low+high)/2;
-                while(low <= high){
-            if(mid == findBin){
-                return mid;
-            } else if (mid< findBin) {
-                high = mid+1;
-                low = mid;
-
-            }else {
-                low = mid - 1;
-                high = mid;
-            }
-
-
-        }
-        return mid;
-    }
+    
 }
 
